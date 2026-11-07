@@ -349,6 +349,8 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
   color: var(--muted);
   font: .79rem/1.85 var(--body);
 }
+.timeline-note .explanation:first-child { border-top: 0; padding-top: 0; }
+.timeline-note .explanation:last-child { padding-bottom: 0; }
 .timeline li.timeline-publication { border-top: 1px solid var(--line); }
 .timeline time { font-size: 1.25rem; white-space: nowrap; }
 .timeline time span { color: var(--muted); }
@@ -775,7 +777,16 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
           <ol class="timeline" aria-label="観測と出版の記録">
             <li><time datetime="1999-09-08"><span>1999</span> 09.08</time><span>初検出！</span></li>
             <li><time datetime="1999-09-15"><span>1999</span> 09.15</time><span>再検出！</span></li>
-            <li class="timeline-note"><p>2回観測して初めて、周期的な惑星のトランジットだとわかったのである。2回とも超重要なのじゃ！byドクターYG</p></li>
+            <li class="timeline-note">
+              <section class="explanation">
+                <h3>1週間の間隔になった理由は？</h3>
+                <p>惑星の1年が3.5日だからちょうど1週間後に2回目が取れたのじゃ。半日ずれる3.5日後は昼だから観測できなかったのである。by ドクターYG</p>
+              </section>
+              <section class="explanation">
+                <h3>2回観測された理由は？</h3>
+                <p>2回観測して初めて、周期的な惑星のトランジットだとわかったのである。2回とも超重要なのじゃ！by ドクターYG</p>
+              </section>
+            </li>
             <li class="timeline-publication"><time datetime="2000-01-20"><span>2000</span> 01.20</time><span>論文出版！</span></li>
           </ol>
           <a class="paper-link" href="https://doi.org/10.1086/312457" target="_blank" rel="noopener">発見論文を読む <span aria-hidden="true">↗</span></a>
