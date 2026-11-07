@@ -386,6 +386,13 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 }
 .replay-views { display: grid; grid-template: "view" 1fr / minmax(0, 1fr); flex: 1; }
 .replay-live, .replay-summary { grid-area: view; min-width: 0; }
+.replay-live { display: flex; flex-direction: column; }
+.replay-live .instrument { flex: 0 0 auto; }
+.timeline-stage { display: flex; flex-direction: column; flex: 1; }
+.timeline-stage .scene, .timeline-scrub { flex-shrink: 0; }
+.photometry { display: flex; flex-direction: column; flex: 1; }
+.graph-head, .contact-lane { flex-shrink: 0; }
+.plot-wrap { flex: 1 0 153px; }
 .replay-live, .replay-summary {
   transition: opacity .6s ease, visibility 0s;
 }
